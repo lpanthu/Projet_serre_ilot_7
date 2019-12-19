@@ -1,16 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
-/* 
- * File:   VuePrincipale.h
- * Author: snir2g2
- *
- * Created on 19 décembre 2019, 15:02
- */
-
 #ifndef _VUEPRINCIPALE_H
 #define _VUEPRINCIPALE_H
 
@@ -19,10 +6,15 @@
 class VuePrincipale : public QWidget {
     Q_OBJECT
 public:
-    VuePrincipale();
+    VuePrincipale(Superviseur* unSuperviseur);
     virtual ~VuePrincipale();
+    VueMeteo* getLaVueMeteo();
+    void mettreAJour();
 private:
     Ui::VuePrincipale widget;
+    VueSerre* laVueSerre;
+    VueMeteo* laVueMeteo;
+    Superviseur* leSuperviseur;
 };
 
 #endif /* _VUEPRINCIPALE_H */
