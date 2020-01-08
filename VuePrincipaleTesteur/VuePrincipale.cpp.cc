@@ -1,6 +1,11 @@
 #include "VuePrincipale.h"
+/*
+VuePrincipale::VuePrincipale(Superviseur unSuperviseur) {
+    widget.setupUi(this);
+}
+*/
 
-VuePrincipale::VuePrincipale(unSuperviseur) {
+VuePrincipale::VuePrincipale() {
     widget.setupUi(this);
 }
 
