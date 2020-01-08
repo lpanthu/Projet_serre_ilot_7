@@ -11,4 +11,6 @@ VuePrincipale::VueMeteo* getLaVueMeteo() {
 }
 
 void VuePrincipale::mettreAJour() {
+    laVueMeteo->mettreAJour();
+    laVueSerre->mettreAJour();
 }
