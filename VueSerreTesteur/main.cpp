@@ -12,14 +12,16 @@
  */
 
 #include <QApplication>
+#include "ui_VueSerre.h"
+#include "VueSerre.h"
 
 int main(int argc, char *argv[]) {
-    // initialize resources, if needed
-    // Q_INIT_RESOURCE(resfile);
 
     QApplication app(argc, argv);
-
-    // create and show your widgets here
-
+    VueSerre *LaSerre = new VueSerre();
+    LaSerre -> mettreAJour();
+    LaSerre -> show() ;
+    
     return app.exec();
+    
 }
