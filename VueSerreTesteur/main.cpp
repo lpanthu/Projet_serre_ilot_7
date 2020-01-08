@@ -8,7 +8,7 @@
  * File:   main.cpp
  * Author: snir2g2
  *
- * Created on 19 décembre 2019, 15:50
+ * Created on 8 janvier 2020, 17:42
  */
 
 #include <QApplication>
