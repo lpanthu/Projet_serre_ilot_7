@@ -6,15 +6,18 @@
 class VuePrincipale : public QWidget {
     Q_OBJECT
 public:
-    VuePrincipale(Superviseur* unSuperviseur);
+    //VuePrincipale(Superviseur* unSuperviseur);
+    VuePrincipale();
     virtual ~VuePrincipale();
-    VueMeteo* getLaVueMeteo();
+    //VueMeteo* getLaVueMeteo();
     void mettreAJour();
 private:
     Ui::VuePrincipale widget;
+    /*V
     VueSerre* laVueSerre;
     VueMeteo* laVueMeteo;
     Superviseur* leSuperviseur;
+    */
 };
 
 #endif /* _VUEPRINCIPALE_H */
