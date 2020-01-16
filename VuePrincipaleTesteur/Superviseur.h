@@ -1,6 +1,7 @@
 #ifndef SUPERVISEUR_H
 #define SUPERVISEUR_H
 
+#include "VuePrincipale.h"
 #include "ClientMeteo.h"
 #include "Serre.h"
 

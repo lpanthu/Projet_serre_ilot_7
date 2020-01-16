@@ -1,7 +1,7 @@
 #ifndef SERRE_H
 #define SERRE_H
 
-//#include "InfosClimat.h"
+#include "InfosClimat.h"
 
 class Serre {
 public:

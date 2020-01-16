@@ -1,7 +1,7 @@
 #ifndef CLIENTMETEO_H
 #define CLIENTMETEO_H
 
-//#include "BulletinMeteo.h"
+#include "BulletinMeteo.h"
 
 class ClientMeteo {
 public:
