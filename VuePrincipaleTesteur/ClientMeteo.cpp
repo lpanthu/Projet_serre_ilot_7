@@ -19,4 +19,5 @@ void ClientMeteo::declencherFinAlerteVent() {
 }
 
 BulletinMeteo* ClientMeteo::getBulletinMeteo() {
+    return bulletinMeteo;
 }

@@ -1,3 +1,6 @@
+
+#include "VuePrincipale.h"
+
 VuePrincipale::VuePrincipale(Superviseur unSuperviseur) {
     widget.setupUi(this);
     leSuperviseur = unSuperviseur;
@@ -13,10 +16,10 @@ VuePrincipale::~VuePrincipale() {
 }
 
 VueMeteo* VuePrincipale::getLaVueMeteo() {
+    return laVueMeteo;
 }
 
 void VuePrincipale::mettreAJour() {
-    
     laVueMeteo->mettreAJour();
     laVueSerre->mettreAJour();
 }
