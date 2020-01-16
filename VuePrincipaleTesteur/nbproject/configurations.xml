@@ -4,8 +4,11 @@
     <logicalFolder name="HeaderFiles"
                    displayName="Header Files"
                    projectFiles="true">
+      <itemPath>ClientMeteo.h</itemPath>
+      <itemPath>Serre.h</itemPath>
       <itemPath>Superviseur.h</itemPath>
       <itemPath>../VueMeteoTesteur/VueMeteo.h</itemPath>
+      <itemPath>VuePrincipale.h</itemPath>
       <itemPath>../VueSerreTesteur/VueSerre.h</itemPath>
       <itemPath>ui_VuePrincipale.h</itemPath>
     </logicalFolder>
@@ -19,6 +22,8 @@
     <logicalFolder name="SourceFiles"
                    displayName="Source Files"
                    projectFiles="true">
+      <itemPath>ClientMeteo.cpp</itemPath>
+      <itemPath>Serre.cpp</itemPath>
       <itemPath>Superviseur.cpp</itemPath>
       <itemPath>../VueMeteoTesteur/VueMeteo.cpp.cc</itemPath>
       <itemPath>VuePrincipale.cpp.cc</itemPath>
@@ -73,11 +78,21 @@
       </item>
       <item path="../VueSerreTesteur/VueSerre.ui" ex="false" tool="3" flavor2="0">
       </item>
+      <item path="ClientMeteo.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="ClientMeteo.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Serre.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Serre.h" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="Superviseur.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="Superviseur.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="VuePrincipale.cpp.cc" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="VuePrincipale.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="VuePrincipale.ui" ex="false" tool="3" flavor2="0">
       </item>
@@ -122,11 +137,21 @@
       </item>
       <item path="../VueSerreTesteur/VueSerre.ui" ex="false" tool="3" flavor2="0">
       </item>
+      <item path="ClientMeteo.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="ClientMeteo.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Serre.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Serre.h" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="Superviseur.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="Superviseur.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="VuePrincipale.cpp.cc" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="VuePrincipale.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="VuePrincipale.ui" ex="false" tool="3" flavor2="0">
       </item>
