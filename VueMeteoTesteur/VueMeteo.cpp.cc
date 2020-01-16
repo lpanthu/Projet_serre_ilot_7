@@ -12,6 +12,7 @@
  */
 
 #include "VueMeteo.h"
+#
 
 VueMeteo::VueMeteo() {
     widget.setupUi(this);
@@ -21,6 +22,6 @@ VueMeteo::~VueMeteo() {
 }
 
 void VueMeteo::mettreAJour(){
-    widget.vitesseVent->setText("40");
-    widget.temperature->setText("15");
+    widget.vitesseVent->setText(QString::number(BulletinMeteo->getVitesseVent()));
+    widget.temperature->setText(QString::number(BulletinMeteo->getTemperature()));
 }
