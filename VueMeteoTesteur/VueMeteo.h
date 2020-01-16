@@ -16,14 +16,16 @@
 
 #include "ui_VueMeteo.h"
 
-class VueMeteo : public QWidget {
+class VueMeteo : public Observateur, QWidget {
     Q_OBJECT
 public:
     VueMeteo();
     virtual ~VueMeteo();
     void mettreAJour();
+    VueMeteo(BulletinMeteo* unBulletinMeteo);
 private:
     Ui::VueMeteo widget;
+    VuePrincipale* laVuePrincipale;
 };
 
 #endif /* _VUEMETEO_H */

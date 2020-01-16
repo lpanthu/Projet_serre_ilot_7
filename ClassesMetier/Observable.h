@@ -28,7 +28,7 @@ public:
     void notifier();
 
 private:
-    std::vector<Observateur*> listeObservateurs;
+    vector<Observateur*> listeObservateurs;
 };
 
 #endif /* OBSERVABLE_H */

@@ -1,30 +1,25 @@
+
 #include "VuePrincipale.h"
 
-/*
 VuePrincipale::VuePrincipale(Superviseur unSuperviseur) {
     widget.setupUi(this);
-    VueMeteo *laVueMeteo = new VueMeteo(unBulletinMeteo);
+    leSuperviseur = unSuperviseur;
+    VueMeteo* laVueMeteo = new VueMeteo(leSuperviseur->getLeClientMeteo()->getBulletinMeteo());
+    VueSerre* laVueSerre = new VueSerre(nom, uneInfoClimat);
     widget.meteo->addWidget(laVueMeteo);
-    //VueSerre *laVueSerre = new VueMeteo(nom, uneInfoClimat);
-    //widget.serre->addWidget(laVueSerre);
-}
-*/
-
-VuePrincipale::VuePrincipale() {
-    widget.setupUi(this);
-    //VueMeteo *laVueMeteo = new VueMeteo(unBulletinMeteo);
-    VueMeteo *laVueMeteo = new VueMeteo();
+    widget.serre->addWidget(laVueSerre);
 }
 
 VuePrincipale::~VuePrincipale() {
+    delete laVueMeteo;
+    delete laVueSerre;
 }
-/*
+
 VueMeteo* VuePrincipale::getLaVueMeteo() {
+    return laVueMeteo;
 }
-*/
 
 void VuePrincipale::mettreAJour() {
-    widget.meteo->addWidget(laVueMeteo);
     laVueMeteo->mettreAJour();
-    //laVueSerre->mettreAJour();
+    laVueSerre->mettreAJour();
 }

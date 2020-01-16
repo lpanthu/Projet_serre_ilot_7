@@ -1,13 +1,18 @@
 #include "Superviseur.h"
 
 Superviseur::Superviseur() {
+    ClientMeteo* leClientMeteo = new ClientMeteo();
+    Serre* serre = new Serre();
 }
 
 Superviseur::~Superviseur() {
+    delete leClientMeteo;
 }
 
-//ClientMeteo* Superviseur::getLeClientMeteo() {
-//}
+ClientMeteo* Superviseur::getLeClientMeteo() {
+    return leClientMeteo;
+}
 
-//void Superviseur::SetVuePrincipale(VuePrincipale uneViePrincipale) {
-//}
+void Superviseur::setVuePrincipale(VuePrincipale uneVuePrincipale) {
+    laVue = uneVuePrincipale;
+}
