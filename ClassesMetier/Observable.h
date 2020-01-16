@@ -16,6 +16,8 @@
 #include <vector>
 #include "Observateur.h"
 
+using namespace std;
+
 class Observateur;
 
 class Observable {
@@ -27,7 +29,7 @@ public:
     void notifier();
 
 private:
-    std::vector<Observateur*> listeObservateurs;
+    vector<Observateur*> listeObservateurs;
 };
 
 #endif /* OBSERVABLE_H */
