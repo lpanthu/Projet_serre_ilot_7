@@ -7,8 +7,11 @@ public:
     Superviseur(const Superviseur& orig);
     virtual ~Superviseur();
 private:
-
+    /*
+    VuePrincipale* laVue;
+    ClientMeteo* leClientMeteo;
+    Serre* serre;
+    */
 };
 
 #endif /* SUPERVISEUR_H */
-
