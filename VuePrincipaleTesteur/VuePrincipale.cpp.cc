@@ -1,4 +1,3 @@
-
 #include "VuePrincipale.h"
 
 VuePrincipale::VuePrincipale(Superviseur unSuperviseur) {
