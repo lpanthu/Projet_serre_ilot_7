@@ -4,9 +4,9 @@
     <logicalFolder name="HeaderFiles"
                    displayName="Header Files"
                    projectFiles="true">
-      <itemPath>ClientMeteo.h</itemPath>
-      <itemPath>Serre.h</itemPath>
-      <itemPath>Superviseur.h</itemPath>
+      <itemPath>../ClassesMetier/ClientMeteo.h</itemPath>
+      <itemPath>../ClassesMetier/Serre.h</itemPath>
+      <itemPath>../ClassesMetier/Superviseur.h</itemPath>
       <itemPath>../VueMeteoTesteur/VueMeteo.h</itemPath>
       <itemPath>VuePrincipale.h</itemPath>
       <itemPath>../VueSerreTesteur/VueSerre.h</itemPath>
@@ -22,9 +22,9 @@
     <logicalFolder name="SourceFiles"
                    displayName="Source Files"
                    projectFiles="true">
-      <itemPath>ClientMeteo.cpp</itemPath>
-      <itemPath>Serre.cpp</itemPath>
-      <itemPath>Superviseur.cpp</itemPath>
+      <itemPath>../ClassesMetier/ClientMeteo.cpp</itemPath>
+      <itemPath>../ClassesMetier/Serre.cpp</itemPath>
+      <itemPath>../ClassesMetier/Superviseur.cpp</itemPath>
       <itemPath>../VueMeteoTesteur/VueMeteo.cpp.cc</itemPath>
       <itemPath>VuePrincipale.cpp.cc</itemPath>
       <itemPath>../VueSerreTesteur/VueSerre.cpp.cc</itemPath>
@@ -66,6 +66,18 @@
       </qt>
       <compileType>
       </compileType>
+      <item path="../ClassesMetier/ClientMeteo.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="../ClassesMetier/ClientMeteo.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../ClassesMetier/Serre.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="../ClassesMetier/Serre.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../ClassesMetier/Superviseur.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="../ClassesMetier/Superviseur.h" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="../VueMeteoTesteur/VueMeteo.cpp.cc" ex="false" tool="1" flavor2="0">
       </item>
       <item path="../VueMeteoTesteur/VueMeteo.h" ex="false" tool="3" flavor2="0">
@@ -77,18 +89,6 @@
       <item path="../VueSerreTesteur/VueSerre.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="../VueSerreTesteur/VueSerre.ui" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="ClientMeteo.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="ClientMeteo.h" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="Serre.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="Serre.h" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="Superviseur.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="Superviseur.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="VuePrincipale.cpp.cc" ex="false" tool="1" flavor2="0">
       </item>
@@ -125,6 +125,18 @@
           <developmentMode>5</developmentMode>
         </asmTool>
       </compileType>
+      <item path="../ClassesMetier/ClientMeteo.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="../ClassesMetier/ClientMeteo.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../ClassesMetier/Serre.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="../ClassesMetier/Serre.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../ClassesMetier/Superviseur.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="../ClassesMetier/Superviseur.h" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="../VueMeteoTesteur/VueMeteo.cpp.cc" ex="false" tool="1" flavor2="0">
       </item>
       <item path="../VueMeteoTesteur/VueMeteo.h" ex="false" tool="3" flavor2="0">
@@ -136,18 +148,6 @@
       <item path="../VueSerreTesteur/VueSerre.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="../VueSerreTesteur/VueSerre.ui" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="ClientMeteo.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="ClientMeteo.h" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="Serre.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="Serre.h" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="Superviseur.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="Superviseur.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="VuePrincipale.cpp.cc" ex="false" tool="1" flavor2="0">
       </item>
