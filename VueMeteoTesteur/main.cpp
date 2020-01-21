@@ -20,9 +20,15 @@ int main(int argc, char *argv[]) {
     // Q_INIT_RESOURCE(resfile);
 
     QApplication app(argc, argv);
-    VueMeteo *maVueMeteo = new VueMeteo();
+    
+    
+    
+    
+    
+    
+    /*VueMeteo *maVueMeteo = new VueMeteo();
     maVueMeteo->mettreAJour();
-    maVueMeteo->show();
+    maVueMeteo->show();*/
 
     // create and show your widgets here
 

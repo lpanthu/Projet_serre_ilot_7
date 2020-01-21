@@ -1,6 +1,8 @@
 #ifndef BULLETINMETEO_H
 #define BULLETINMETEO_H
 
+#include "Observable.h"
+
 class BulletinMeteo : public Observable {
 public:
     BulletinMeteo();

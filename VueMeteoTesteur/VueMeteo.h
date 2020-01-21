@@ -15,6 +15,7 @@
 #define _VUEMETEO_H
 
 #include "ui_VueMeteo.h"
+#include "../VuePrincipaleTesteur/VuePrincipale.h"
 
 class VueMeteo : public Observateur, QWidget {
     Q_OBJECT
