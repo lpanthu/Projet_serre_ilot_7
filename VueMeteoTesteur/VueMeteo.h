@@ -15,7 +15,8 @@
 #define _VUEMETEO_H
 
 #include "ui_VueMeteo.h"
-#include "../VuePrincipaleTesteur/VuePrincipale.h"
+#include "../ClassesMetier/Observateur.h"
+#include "../ClassesMetier/BulletinMeteo.h"
 
 class VueMeteo : public Observateur, QWidget {
     Q_OBJECT
@@ -26,7 +27,7 @@ public:
     VueMeteo(BulletinMeteo* unBulletinMeteo);
 private:
     Ui::VueMeteo widget;
-    VuePrincipale* laVuePrincipale;
+    BulletinMeteo* dernierBulletinMeteo;
 };
 
 #endif /* _VUEMETEO_H */

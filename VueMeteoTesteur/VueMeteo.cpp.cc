@@ -12,13 +12,19 @@
  */
 
 #include "VueMeteo.h"
-#
+
 
 VueMeteo::VueMeteo() {
     widget.setupUi(this);
 }
 
 VueMeteo::~VueMeteo() {
+}
+
+VueMeteo::VueMeteo(BulletinMeteo* unBulletinMeteo) {
+    widget.setupUi(this);
+    this->dernierBulletinMeteo = unBulletinMeteo;
+    this->dernierBulletinMeteo->addObservateur(this);
 }
 
 void VueMeteo::mettreAJour(){
