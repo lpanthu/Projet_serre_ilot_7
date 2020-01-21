@@ -602,15 +602,11 @@ compiler_clean: compiler_moc_header_clean compiler_uic_clean
 
 ####### Compile
 
-build/Debug/GNU-Linux/Observable.o: ../ClassesMetier/Observable.cpp VueSerre.h \
-		ui_VueSerre.h \
-		infoclimat.h \
-		../ClassesMetier/Observable.h \
+build/Debug/GNU-Linux/Observable.o: ../ClassesMetier/Observable.cpp ../ClassesMetier/Observable.h \
 		../ClassesMetier/Observateur.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/Debug/GNU-Linux/Observable.o ../ClassesMetier/Observable.cpp
 
-build/Debug/GNU-Linux/Observateur.o: ../ClassesMetier/Observateur.cpp ../ClassesMetier/Observateur.h \
-		../ClassesMetier/Observable.h
+build/Debug/GNU-Linux/Observateur.o: ../ClassesMetier/Observateur.cpp ../ClassesMetier/Observateur.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/Debug/GNU-Linux/Observateur.o ../ClassesMetier/Observateur.cpp
 
 build/Debug/GNU-Linux/VueSerre.cpp.o: VueSerre.cpp.cc ui_VueSerre.h \

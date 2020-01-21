@@ -18,7 +18,7 @@
 #include "infoclimat.h"
 #include "../ClassesMetier/Observateur.h"
 
-class VueSerre : public Observateur, public QWidget {
+class VueSerre : public QWidget, Observateur {
     Q_OBJECT
 public:
     VueSerre();

@@ -61,7 +61,7 @@ void VueSerre::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, vo
 }
 
 const QMetaObject VueSerre::staticMetaObject = {
-    { &Observateur::staticMetaObject, qt_meta_stringdata_VueSerre.data,
+    { &QWidget::staticMetaObject, qt_meta_stringdata_VueSerre.data,
       qt_meta_data_VueSerre,  qt_static_metacall, Q_NULLPTR, Q_NULLPTR}
 };
 
@@ -76,14 +76,14 @@ void *VueSerre::qt_metacast(const char *_clname)
     if (!_clname) return Q_NULLPTR;
     if (!strcmp(_clname, qt_meta_stringdata_VueSerre.stringdata0))
         return static_cast<void*>(const_cast< VueSerre*>(this));
-    if (!strcmp(_clname, "QWidget"))
-        return static_cast< QWidget*>(const_cast< VueSerre*>(this));
-    return Observateur::qt_metacast(_clname);
+    if (!strcmp(_clname, "Observateur"))
+        return static_cast< Observateur*>(const_cast< VueSerre*>(this));
+    return QWidget::qt_metacast(_clname);
 }
 
 int VueSerre::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
 {
-    _id = Observateur::qt_metacall(_c, _id, _a);
+    _id = QWidget::qt_metacall(_c, _id, _a);
     if (_id < 0)
         return _id;
     return _id;
