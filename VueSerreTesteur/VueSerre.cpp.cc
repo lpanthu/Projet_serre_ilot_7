@@ -10,8 +10,10 @@
  *
  * Created on 8 janvier 2020, 17:44
  */
+
 #include "ui_VueSerre.h"
 #include "VueSerre.h"
+
 
 VueSerre::VueSerre() {
     widget.setupUi(this);

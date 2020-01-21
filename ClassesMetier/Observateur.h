@@ -14,10 +14,6 @@
 #ifndef OBSERVATEUR_H
 #define OBSERVATEUR_H
 
-#include "Observable.h"
-
-class Observable;
-
 class Observateur {
 public:
     Observateur();
