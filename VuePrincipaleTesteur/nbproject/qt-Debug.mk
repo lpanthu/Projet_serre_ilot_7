@@ -51,6 +51,7 @@ OBJECTS_DIR   = build/Debug/GNU-Linux/
 SOURCES       = ../ClassesMetier/ClientMeteo.cpp \
 		../ClassesMetier/Serre.cpp \
 		../ClassesMetier/Superviseur.cpp \
+		../ClassesMetier/infoclimat.cpp \
 		../VueMeteoTesteur/VueMeteo.cpp.cc \
 		../VueSerreTesteur/VueSerre.cpp.cc \
 		VuePrincipale.cpp.cc \
@@ -60,6 +61,7 @@ SOURCES       = ../ClassesMetier/ClientMeteo.cpp \
 OBJECTS       = build/Debug/GNU-Linux/ClientMeteo.o \
 		build/Debug/GNU-Linux/Serre.o \
 		build/Debug/GNU-Linux/Superviseur.o \
+		build/Debug/GNU-Linux/infoclimat.o \
 		build/Debug/GNU-Linux/VueMeteo.cpp.o \
 		build/Debug/GNU-Linux/VueSerre.cpp.o \
 		build/Debug/GNU-Linux/VuePrincipale.cpp.o \
@@ -217,12 +219,14 @@ DIST          = /opt/Qt/5.7/gcc_64/mkspecs/features/spec_pre.prf \
 		nbproject/nbproject/qt-Debug.pro ../ClassesMetier/ClientMeteo.h \
 		../ClassesMetier/Serre.h \
 		../ClassesMetier/Superviseur.h \
+		../ClassesMetier/infoclimat.h \
 		../VueMeteoTesteur/VueMeteo.h \
 		../VueSerreTesteur/VueSerre.h \
 		VuePrincipale.h \
 		ui_VuePrincipale.h ../ClassesMetier/ClientMeteo.cpp \
 		../ClassesMetier/Serre.cpp \
 		../ClassesMetier/Superviseur.cpp \
+		../ClassesMetier/infoclimat.cpp \
 		../VueMeteoTesteur/VueMeteo.cpp.cc \
 		../VueSerreTesteur/VueSerre.cpp.cc \
 		VuePrincipale.cpp.cc \
@@ -556,8 +560,8 @@ dist: distdir FORCE
 distdir: FORCE
 	@test -d $(DISTDIR) || mkdir -p $(DISTDIR)
 	$(COPY_FILE) --parents $(DIST) $(DISTDIR)/
-	$(COPY_FILE) --parents ../ClassesMetier/ClientMeteo.h ../ClassesMetier/Serre.h ../ClassesMetier/Superviseur.h ../VueMeteoTesteur/VueMeteo.h ../VueSerreTesteur/VueSerre.h VuePrincipale.h ui_VuePrincipale.h $(DISTDIR)/
-	$(COPY_FILE) --parents ../ClassesMetier/ClientMeteo.cpp ../ClassesMetier/Serre.cpp ../ClassesMetier/Superviseur.cpp ../VueMeteoTesteur/VueMeteo.cpp.cc ../VueSerreTesteur/VueSerre.cpp.cc VuePrincipale.cpp.cc main.cpp $(DISTDIR)/
+	$(COPY_FILE) --parents ../ClassesMetier/ClientMeteo.h ../ClassesMetier/Serre.h ../ClassesMetier/Superviseur.h ../ClassesMetier/infoclimat.h ../VueMeteoTesteur/VueMeteo.h ../VueSerreTesteur/VueSerre.h VuePrincipale.h ui_VuePrincipale.h $(DISTDIR)/
+	$(COPY_FILE) --parents ../ClassesMetier/ClientMeteo.cpp ../ClassesMetier/Serre.cpp ../ClassesMetier/Superviseur.cpp ../ClassesMetier/infoclimat.cpp ../VueMeteoTesteur/VueMeteo.cpp.cc ../VueSerreTesteur/VueSerre.cpp.cc VuePrincipale.cpp.cc main.cpp $(DISTDIR)/
 	$(COPY_FILE) --parents ../VueMeteoTesteur/VueMeteo.ui ../VueSerreTesteur/VueSerre.ui VuePrincipale.ui $(DISTDIR)/
 
 
@@ -882,6 +886,10 @@ moc_VueSerre.cpp: ../VueSerreTesteur/ui_VueSerre.h \
 		/opt/Qt/5.7/gcc_64/include/QtGui/qpen.h \
 		/opt/Qt/5.7/gcc_64/include/QtGui/qtextoption.h \
 		/opt/Qt/5.7/gcc_64/include/QtWidgets/QWidget \
+		../VueSerreTesteur/infoclimat.h \
+		../ClassesMetier/Observable.h \
+		../ClassesMetier/Observateur.h \
+		../VueSerreTesteur/VueSerre.h \
 		../VueSerreTesteur/VueSerre.h \
 		/opt/Qt/5.7/gcc_64/bin/moc
 	/opt/Qt/5.7/gcc_64/bin/moc $(DEFINES) -I/opt/Qt/5.7/gcc_64/mkspecs/linux-g++ -I'/home/snir2g2/Documents/IR C/TP6/Projet_serre_ilot_7/VuePrincipaleTesteur/nbproject' -I/opt/Qt/5.7/gcc_64/include -I/opt/Qt/5.7/gcc_64/include/QtWidgets -I/opt/Qt/5.7/gcc_64/include/QtGui -I/opt/Qt/5.7/gcc_64/include/QtCore -I. -I/usr/include/c++/6.1.1 -I/usr/include/c++/6.1.1/x86_64-redhat-linux -I/usr/include/c++/6.1.1/backward -I/usr/lib/gcc/x86_64-redhat-linux/6.1.1/include -I/usr/local/include -I/usr/include ../VueSerreTesteur/VueSerre.h -o moc_VueSerre.cpp
@@ -1039,11 +1047,13 @@ moc_VuePrincipale.cpp: ui_VuePrincipale.h \
 		../VueSerreTesteur/VueSerre.h \
 		../VueSerreTesteur/ui_VueSerre.h \
 		/opt/Qt/5.7/gcc_64/include/QtWidgets/QGridLayout \
-		../ClassesMetier/ClientMeteo.h \
-		../ClassesMetier/BulletinMeteo.h \
+		../VueSerreTesteur/infoclimat.h \
 		../ClassesMetier/Observable.h \
 		../ClassesMetier/Observateur.h \
+		../ClassesMetier/ClientMeteo.h \
+		../ClassesMetier/BulletinMeteo.h \
 		../ClassesMetier/Serre.h \
+		../ClassesMetier/infoclimat.h \
 		VuePrincipale.h \
 		/opt/Qt/5.7/gcc_64/bin/moc
 	/opt/Qt/5.7/gcc_64/bin/moc $(DEFINES) -I/opt/Qt/5.7/gcc_64/mkspecs/linux-g++ -I'/home/snir2g2/Documents/IR C/TP6/Projet_serre_ilot_7/VuePrincipaleTesteur/nbproject' -I/opt/Qt/5.7/gcc_64/include -I/opt/Qt/5.7/gcc_64/include/QtWidgets -I/opt/Qt/5.7/gcc_64/include/QtGui -I/opt/Qt/5.7/gcc_64/include/QtCore -I. -I/usr/include/c++/6.1.1 -I/usr/include/c++/6.1.1/x86_64-redhat-linux -I/usr/include/c++/6.1.1/backward -I/usr/lib/gcc/x86_64-redhat-linux/6.1.1/include -I/usr/local/include -I/usr/include VuePrincipale.h -o moc_VuePrincipale.cpp
@@ -1076,12 +1086,11 @@ compiler_clean: compiler_moc_header_clean compiler_uic_clean
 ####### Compile
 
 build/Debug/GNU-Linux/ClientMeteo.o: ../ClassesMetier/ClientMeteo.cpp ../ClassesMetier/ClientMeteo.h \
-		../ClassesMetier/BulletinMeteo.h \
-		../ClassesMetier/Observable.h \
-		../ClassesMetier/Observateur.h
+		../ClassesMetier/BulletinMeteo.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/Debug/GNU-Linux/ClientMeteo.o ../ClassesMetier/ClientMeteo.cpp
 
-build/Debug/GNU-Linux/Serre.o: ../ClassesMetier/Serre.cpp ../ClassesMetier/Serre.h
+build/Debug/GNU-Linux/Serre.o: ../ClassesMetier/Serre.cpp ../ClassesMetier/Serre.h \
+		../ClassesMetier/infoclimat.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/Debug/GNU-Linux/Serre.o ../ClassesMetier/Serre.cpp
 
 build/Debug/GNU-Linux/Superviseur.o: ../ClassesMetier/Superviseur.cpp ../ClassesMetier/Superviseur.h \
@@ -1237,12 +1246,165 @@ build/Debug/GNU-Linux/Superviseur.o: ../ClassesMetier/Superviseur.cpp ../Classes
 		../VueSerreTesteur/VueSerre.h \
 		../VueSerreTesteur/ui_VueSerre.h \
 		/opt/Qt/5.7/gcc_64/include/QtWidgets/QGridLayout \
-		../ClassesMetier/ClientMeteo.h \
-		../ClassesMetier/BulletinMeteo.h \
+		../VueSerreTesteur/infoclimat.h \
 		../ClassesMetier/Observable.h \
 		../ClassesMetier/Observateur.h \
-		../ClassesMetier/Serre.h
+		../ClassesMetier/ClientMeteo.h \
+		../ClassesMetier/BulletinMeteo.h \
+		../ClassesMetier/Serre.h \
+		../ClassesMetier/infoclimat.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/Debug/GNU-Linux/Superviseur.o ../ClassesMetier/Superviseur.cpp
+
+build/Debug/GNU-Linux/infoclimat.o: ../ClassesMetier/infoclimat.cpp ../VueSerreTesteur/infoclimat.h \
+		../ClassesMetier/Observable.h \
+		../ClassesMetier/Observateur.h \
+		../VueSerreTesteur/VueSerre.h \
+		../VueSerreTesteur/ui_VueSerre.h \
+		/opt/Qt/5.7/gcc_64/include/QtCore/QVariant \
+		/opt/Qt/5.7/gcc_64/include/QtCore/qvariant.h \
+		/opt/Qt/5.7/gcc_64/include/QtCore/qatomic.h \
+		/opt/Qt/5.7/gcc_64/include/QtCore/qglobal.h \
+		/opt/Qt/5.7/gcc_64/include/QtCore/qconfig.h \
+		/opt/Qt/5.7/gcc_64/include/QtCore/qfeatures.h \
+		/opt/Qt/5.7/gcc_64/include/QtCore/qsystemdetection.h \
+		/opt/Qt/5.7/gcc_64/include/QtCore/qprocessordetection.h \
+		/opt/Qt/5.7/gcc_64/include/QtCore/qcompilerdetection.h \
+		/opt/Qt/5.7/gcc_64/include/QtCore/qtypeinfo.h \
+		/opt/Qt/5.7/gcc_64/include/QtCore/qtypetraits.h \
+		/opt/Qt/5.7/gcc_64/include/QtCore/qisenum.h \
+		/opt/Qt/5.7/gcc_64/include/QtCore/qsysinfo.h \
+		/opt/Qt/5.7/gcc_64/include/QtCore/qlogging.h \
+		/opt/Qt/5.7/gcc_64/include/QtCore/qflags.h \
+		/opt/Qt/5.7/gcc_64/include/QtCore/qglobalstatic.h \
+		/opt/Qt/5.7/gcc_64/include/QtCore/qmutex.h \
+		/opt/Qt/5.7/gcc_64/include/QtCore/qnumeric.h \
+		/opt/Qt/5.7/gcc_64/include/QtCore/qversiontagging.h \
+		/opt/Qt/5.7/gcc_64/include/QtCore/qbasicatomic.h \
+		/opt/Qt/5.7/gcc_64/include/QtCore/qatomic_bootstrap.h \
+		/opt/Qt/5.7/gcc_64/include/QtCore/qgenericatomic.h \
+		/opt/Qt/5.7/gcc_64/include/QtCore/qatomic_cxx11.h \
+		/opt/Qt/5.7/gcc_64/include/QtCore/qatomic_msvc.h \
+		/opt/Qt/5.7/gcc_64/include/QtCore/qbytearray.h \
+		/opt/Qt/5.7/gcc_64/include/QtCore/qrefcount.h \
+		/opt/Qt/5.7/gcc_64/include/QtCore/qnamespace.h \
+		/opt/Qt/5.7/gcc_64/include/QtCore/qarraydata.h \
+		/opt/Qt/5.7/gcc_64/include/QtCore/qstring.h \
+		/opt/Qt/5.7/gcc_64/include/QtCore/qchar.h \
+		/opt/Qt/5.7/gcc_64/include/QtCore/qstringbuilder.h \
+		/opt/Qt/5.7/gcc_64/include/QtCore/qlist.h \
+		/opt/Qt/5.7/gcc_64/include/QtCore/qalgorithms.h \
+		/opt/Qt/5.7/gcc_64/include/QtCore/qiterator.h \
+		/opt/Qt/5.7/gcc_64/include/QtCore/qhashfunctions.h \
+		/opt/Qt/5.7/gcc_64/include/QtCore/qpair.h \
+		/opt/Qt/5.7/gcc_64/include/QtCore/qbytearraylist.h \
+		/opt/Qt/5.7/gcc_64/include/QtCore/qstringlist.h \
+		/opt/Qt/5.7/gcc_64/include/QtCore/qregexp.h \
+		/opt/Qt/5.7/gcc_64/include/QtCore/qstringmatcher.h \
+		/opt/Qt/5.7/gcc_64/include/QtCore/qmetatype.h \
+		/opt/Qt/5.7/gcc_64/include/QtCore/qvarlengtharray.h \
+		/opt/Qt/5.7/gcc_64/include/QtCore/qcontainerfwd.h \
+		/opt/Qt/5.7/gcc_64/include/QtCore/qobjectdefs.h \
+		/opt/Qt/5.7/gcc_64/include/QtCore/qobjectdefs_impl.h \
+		/opt/Qt/5.7/gcc_64/include/QtCore/qmap.h \
+		/opt/Qt/5.7/gcc_64/include/QtCore/qdebug.h \
+		/opt/Qt/5.7/gcc_64/include/QtCore/qhash.h \
+		/opt/Qt/5.7/gcc_64/include/QtCore/qtextstream.h \
+		/opt/Qt/5.7/gcc_64/include/QtCore/qiodevice.h \
+		/opt/Qt/5.7/gcc_64/include/QtCore/qobject.h \
+		/opt/Qt/5.7/gcc_64/include/QtCore/qcoreevent.h \
+		/opt/Qt/5.7/gcc_64/include/QtCore/qscopedpointer.h \
+		/opt/Qt/5.7/gcc_64/include/QtCore/qobject_impl.h \
+		/opt/Qt/5.7/gcc_64/include/QtCore/qlocale.h \
+		/opt/Qt/5.7/gcc_64/include/QtCore/qshareddata.h \
+		/opt/Qt/5.7/gcc_64/include/QtCore/qvector.h \
+		/opt/Qt/5.7/gcc_64/include/QtCore/qpoint.h \
+		/opt/Qt/5.7/gcc_64/include/QtCore/qset.h \
+		/opt/Qt/5.7/gcc_64/include/QtCore/qcontiguouscache.h \
+		/opt/Qt/5.7/gcc_64/include/QtCore/qsharedpointer.h \
+		/opt/Qt/5.7/gcc_64/include/QtCore/qsharedpointer_impl.h \
+		/opt/Qt/5.7/gcc_64/include/QtWidgets/QAction \
+		/opt/Qt/5.7/gcc_64/include/QtWidgets/qaction.h \
+		/opt/Qt/5.7/gcc_64/include/QtGui/qkeysequence.h \
+		/opt/Qt/5.7/gcc_64/include/QtWidgets/qwidget.h \
+		/opt/Qt/5.7/gcc_64/include/QtGui/qwindowdefs.h \
+		/opt/Qt/5.7/gcc_64/include/QtGui/qwindowdefs_win.h \
+		/opt/Qt/5.7/gcc_64/include/QtCore/qmargins.h \
+		/opt/Qt/5.7/gcc_64/include/QtGui/qpaintdevice.h \
+		/opt/Qt/5.7/gcc_64/include/QtCore/qrect.h \
+		/opt/Qt/5.7/gcc_64/include/QtCore/qsize.h \
+		/opt/Qt/5.7/gcc_64/include/QtGui/qpalette.h \
+		/opt/Qt/5.7/gcc_64/include/QtGui/qcolor.h \
+		/opt/Qt/5.7/gcc_64/include/QtGui/qrgb.h \
+		/opt/Qt/5.7/gcc_64/include/QtGui/qrgba64.h \
+		/opt/Qt/5.7/gcc_64/include/QtGui/qbrush.h \
+		/opt/Qt/5.7/gcc_64/include/QtGui/qmatrix.h \
+		/opt/Qt/5.7/gcc_64/include/QtGui/qpolygon.h \
+		/opt/Qt/5.7/gcc_64/include/QtGui/qregion.h \
+		/opt/Qt/5.7/gcc_64/include/QtCore/qdatastream.h \
+		/opt/Qt/5.7/gcc_64/include/QtCore/qline.h \
+		/opt/Qt/5.7/gcc_64/include/QtGui/qtransform.h \
+		/opt/Qt/5.7/gcc_64/include/QtGui/qpainterpath.h \
+		/opt/Qt/5.7/gcc_64/include/QtGui/qimage.h \
+		/opt/Qt/5.7/gcc_64/include/QtGui/qpixelformat.h \
+		/opt/Qt/5.7/gcc_64/include/QtGui/qpixmap.h \
+		/opt/Qt/5.7/gcc_64/include/QtGui/qfont.h \
+		/opt/Qt/5.7/gcc_64/include/QtGui/qfontmetrics.h \
+		/opt/Qt/5.7/gcc_64/include/QtGui/qfontinfo.h \
+		/opt/Qt/5.7/gcc_64/include/QtWidgets/qsizepolicy.h \
+		/opt/Qt/5.7/gcc_64/include/QtGui/qcursor.h \
+		/opt/Qt/5.7/gcc_64/include/QtGui/qevent.h \
+		/opt/Qt/5.7/gcc_64/include/QtCore/qurl.h \
+		/opt/Qt/5.7/gcc_64/include/QtCore/qurlquery.h \
+		/opt/Qt/5.7/gcc_64/include/QtCore/qfile.h \
+		/opt/Qt/5.7/gcc_64/include/QtCore/qfiledevice.h \
+		/opt/Qt/5.7/gcc_64/include/QtGui/qvector2d.h \
+		/opt/Qt/5.7/gcc_64/include/QtGui/qtouchdevice.h \
+		/opt/Qt/5.7/gcc_64/include/QtGui/qicon.h \
+		/opt/Qt/5.7/gcc_64/include/QtWidgets/qactiongroup.h \
+		/opt/Qt/5.7/gcc_64/include/QtWidgets/QApplication \
+		/opt/Qt/5.7/gcc_64/include/QtWidgets/qapplication.h \
+		/opt/Qt/5.7/gcc_64/include/QtCore/qcoreapplication.h \
+		/opt/Qt/5.7/gcc_64/include/QtCore/qeventloop.h \
+		/opt/Qt/5.7/gcc_64/include/QtWidgets/qdesktopwidget.h \
+		/opt/Qt/5.7/gcc_64/include/QtGui/qguiapplication.h \
+		/opt/Qt/5.7/gcc_64/include/QtGui/qinputmethod.h \
+		/opt/Qt/5.7/gcc_64/include/QtWidgets/QButtonGroup \
+		/opt/Qt/5.7/gcc_64/include/QtWidgets/qbuttongroup.h \
+		/opt/Qt/5.7/gcc_64/include/QtWidgets/QGridLayout \
+		/opt/Qt/5.7/gcc_64/include/QtWidgets/qgridlayout.h \
+		/opt/Qt/5.7/gcc_64/include/QtWidgets/qlayout.h \
+		/opt/Qt/5.7/gcc_64/include/QtWidgets/qlayoutitem.h \
+		/opt/Qt/5.7/gcc_64/include/QtWidgets/qboxlayout.h \
+		/opt/Qt/5.7/gcc_64/include/QtWidgets/QGroupBox \
+		/opt/Qt/5.7/gcc_64/include/QtWidgets/qgroupbox.h \
+		/opt/Qt/5.7/gcc_64/include/QtWidgets/qframe.h \
+		/opt/Qt/5.7/gcc_64/include/QtWidgets/QHeaderView \
+		/opt/Qt/5.7/gcc_64/include/QtWidgets/qheaderview.h \
+		/opt/Qt/5.7/gcc_64/include/QtWidgets/qabstractitemview.h \
+		/opt/Qt/5.7/gcc_64/include/QtWidgets/qabstractscrollarea.h \
+		/opt/Qt/5.7/gcc_64/include/QtCore/qabstractitemmodel.h \
+		/opt/Qt/5.7/gcc_64/include/QtCore/qitemselectionmodel.h \
+		/opt/Qt/5.7/gcc_64/include/QtWidgets/qabstractitemdelegate.h \
+		/opt/Qt/5.7/gcc_64/include/QtWidgets/qstyleoption.h \
+		/opt/Qt/5.7/gcc_64/include/QtWidgets/qabstractspinbox.h \
+		/opt/Qt/5.7/gcc_64/include/QtGui/qvalidator.h \
+		/opt/Qt/5.7/gcc_64/include/QtCore/qregularexpression.h \
+		/opt/Qt/5.7/gcc_64/include/QtWidgets/qslider.h \
+		/opt/Qt/5.7/gcc_64/include/QtWidgets/qabstractslider.h \
+		/opt/Qt/5.7/gcc_64/include/QtWidgets/qstyle.h \
+		/opt/Qt/5.7/gcc_64/include/QtWidgets/qtabbar.h \
+		/opt/Qt/5.7/gcc_64/include/QtWidgets/qtabwidget.h \
+		/opt/Qt/5.7/gcc_64/include/QtWidgets/qrubberband.h \
+		/opt/Qt/5.7/gcc_64/include/QtWidgets/QLabel \
+		/opt/Qt/5.7/gcc_64/include/QtWidgets/qlabel.h \
+		/opt/Qt/5.7/gcc_64/include/QtWidgets/QLineEdit \
+		/opt/Qt/5.7/gcc_64/include/QtWidgets/qlineedit.h \
+		/opt/Qt/5.7/gcc_64/include/QtGui/qtextcursor.h \
+		/opt/Qt/5.7/gcc_64/include/QtGui/qtextformat.h \
+		/opt/Qt/5.7/gcc_64/include/QtGui/qpen.h \
+		/opt/Qt/5.7/gcc_64/include/QtGui/qtextoption.h \
+		/opt/Qt/5.7/gcc_64/include/QtWidgets/QWidget
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/Debug/GNU-Linux/infoclimat.o ../ClassesMetier/infoclimat.cpp
 
 build/Debug/GNU-Linux/VueMeteo.cpp.o: ../VueMeteoTesteur/VueMeteo.cpp.cc ../VueMeteoTesteur/VueMeteo.h \
 		../VueMeteoTesteur/ui_VueMeteo.h \
@@ -1538,7 +1700,10 @@ build/Debug/GNU-Linux/VueSerre.cpp.o: ../VueSerreTesteur/VueSerre.cpp.cc ../VueS
 		/opt/Qt/5.7/gcc_64/include/QtGui/qpen.h \
 		/opt/Qt/5.7/gcc_64/include/QtGui/qtextoption.h \
 		/opt/Qt/5.7/gcc_64/include/QtWidgets/QWidget \
-		../VueSerreTesteur/VueSerre.h
+		../VueSerreTesteur/VueSerre.h \
+		../VueSerreTesteur/infoclimat.h \
+		../ClassesMetier/Observable.h \
+		../ClassesMetier/Observateur.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/Debug/GNU-Linux/VueSerre.cpp.o ../VueSerreTesteur/VueSerre.cpp.cc
 
 build/Debug/GNU-Linux/VuePrincipale.cpp.o: VuePrincipale.cpp.cc VuePrincipale.h \
@@ -1546,9 +1711,8 @@ build/Debug/GNU-Linux/VuePrincipale.cpp.o: VuePrincipale.cpp.cc VuePrincipale.h 
 		../ClassesMetier/Superviseur.h \
 		../ClassesMetier/ClientMeteo.h \
 		../ClassesMetier/BulletinMeteo.h \
-		../ClassesMetier/Observable.h \
-		../ClassesMetier/Observateur.h \
 		../ClassesMetier/Serre.h \
+		../ClassesMetier/infoclimat.h \
 		../VueMeteoTesteur/VueMeteo.h \
 		../VueMeteoTesteur/ui_VueMeteo.h \
 		/opt/Qt/5.7/gcc_64/include/QtCore/QVariant \
@@ -1698,7 +1862,10 @@ build/Debug/GNU-Linux/VuePrincipale.cpp.o: VuePrincipale.cpp.cc VuePrincipale.h 
 		/opt/Qt/5.7/gcc_64/include/QtWidgets/QWidget \
 		../VueSerreTesteur/VueSerre.h \
 		../VueSerreTesteur/ui_VueSerre.h \
-		/opt/Qt/5.7/gcc_64/include/QtWidgets/QGridLayout
+		/opt/Qt/5.7/gcc_64/include/QtWidgets/QGridLayout \
+		../VueSerreTesteur/infoclimat.h \
+		../ClassesMetier/Observable.h \
+		../ClassesMetier/Observateur.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/Debug/GNU-Linux/VuePrincipale.cpp.o VuePrincipale.cpp.cc
 
 build/Debug/GNU-Linux/main.o: main.cpp /opt/Qt/5.7/gcc_64/include/QtWidgets/QApplication \
@@ -1810,9 +1977,8 @@ build/Debug/GNU-Linux/main.o: main.cpp /opt/Qt/5.7/gcc_64/include/QtWidgets/QApp
 		../ClassesMetier/Superviseur.h \
 		../ClassesMetier/ClientMeteo.h \
 		../ClassesMetier/BulletinMeteo.h \
-		../ClassesMetier/Observable.h \
-		../ClassesMetier/Observateur.h \
 		../ClassesMetier/Serre.h \
+		../ClassesMetier/infoclimat.h \
 		../VueMeteoTesteur/VueMeteo.h \
 		../VueMeteoTesteur/ui_VueMeteo.h \
 		/opt/Qt/5.7/gcc_64/include/QtCore/QVariant \
@@ -1858,7 +2024,10 @@ build/Debug/GNU-Linux/main.o: main.cpp /opt/Qt/5.7/gcc_64/include/QtWidgets/QApp
 		/opt/Qt/5.7/gcc_64/include/QtWidgets/QVBoxLayout \
 		../VueSerreTesteur/VueSerre.h \
 		../VueSerreTesteur/ui_VueSerre.h \
-		/opt/Qt/5.7/gcc_64/include/QtWidgets/QGridLayout
+		/opt/Qt/5.7/gcc_64/include/QtWidgets/QGridLayout \
+		../VueSerreTesteur/infoclimat.h \
+		../ClassesMetier/Observable.h \
+		../ClassesMetier/Observateur.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/Debug/GNU-Linux/main.o main.cpp
 
 build/Debug/GNU-Linux/moc_VueMeteo.o: moc_VueMeteo.cpp 

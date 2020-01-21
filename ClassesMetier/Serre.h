@@ -1,16 +1,16 @@
 #ifndef SERRE_H
 #define SERRE_H
 
-#include "InfosClimat.h"
+#include "infoclimat.h"
 
 class Serre {
 public:
     Serre();
     Serre(const Serre& orig);
     virtual ~Serre();
-    void executerCommande(Commande commande);
+    void executerCommande();
 private:
-    InfosClimat* infosClimat;
+    infoclimat* infosClimat;
 };
 
 #endif /* SERRE_H */

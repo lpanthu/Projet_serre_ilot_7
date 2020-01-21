@@ -10,6 +10,7 @@
       <itemPath>../VueMeteoTesteur/VueMeteo.h</itemPath>
       <itemPath>VuePrincipale.h</itemPath>
       <itemPath>../VueSerreTesteur/VueSerre.h</itemPath>
+      <itemPath>../ClassesMetier/infoclimat.h</itemPath>
       <itemPath>ui_VuePrincipale.h</itemPath>
     </logicalFolder>
     <logicalFolder name="ResourceFiles"
@@ -28,6 +29,7 @@
       <itemPath>../VueMeteoTesteur/VueMeteo.cpp.cc</itemPath>
       <itemPath>VuePrincipale.cpp.cc</itemPath>
       <itemPath>../VueSerreTesteur/VueSerre.cpp.cc</itemPath>
+      <itemPath>../ClassesMetier/infoclimat.cpp</itemPath>
       <itemPath>main.cpp</itemPath>
     </logicalFolder>
     <logicalFolder name="TestFiles"
@@ -77,6 +79,10 @@
       <item path="../ClassesMetier/Superviseur.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="../ClassesMetier/Superviseur.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../ClassesMetier/infoclimat.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="../ClassesMetier/infoclimat.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="../VueMeteoTesteur/VueMeteo.cpp.cc" ex="false" tool="1" flavor2="0">
       </item>
@@ -136,6 +142,10 @@
       <item path="../ClassesMetier/Superviseur.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="../ClassesMetier/Superviseur.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../ClassesMetier/infoclimat.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="../ClassesMetier/infoclimat.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="../VueMeteoTesteur/VueMeteo.cpp.cc" ex="false" tool="1" flavor2="0">
       </item>
