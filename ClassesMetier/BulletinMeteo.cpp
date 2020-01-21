@@ -12,6 +12,7 @@
  */
 
 #include "BulletinMeteo.h"
+#include "Observable.h"
 
 BulletinMeteo::BulletinMeteo() {
 }
@@ -44,6 +45,5 @@ int BulletinMeteo::getTemperature(){
 int BulletinMeteo::getVitesseVent(){
     return this->vitesseVent;
 }
-
 
 

@@ -8,6 +8,7 @@
       <itemPath>../ClassesMetier/Observable.h</itemPath>
       <itemPath>../ClassesMetier/Observateur.h</itemPath>
       <itemPath>VueMeteo.h</itemPath>
+      <itemPath>../VuePrincipaleTesteur/VuePrincipale.h</itemPath>
     </logicalFolder>
     <logicalFolder name="ResourceFiles"
                    displayName="Resource Files"
@@ -21,6 +22,7 @@
       <itemPath>../ClassesMetier/Observable.cpp</itemPath>
       <itemPath>../ClassesMetier/Observateur.cpp</itemPath>
       <itemPath>VueMeteo.cpp.cc</itemPath>
+      <itemPath>../VuePrincipaleTesteur/VuePrincipale.cpp.cc</itemPath>
       <itemPath>main.cpp</itemPath>
     </logicalFolder>
     <logicalFolder name="TestFiles"
@@ -71,6 +73,16 @@
       </item>
       <item path="../ClassesMetier/Observateur.h" ex="false" tool="3" flavor2="0">
       </item>
+      <item path="../VuePrincipaleTesteur/VuePrincipale.cpp.cc"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="../VuePrincipaleTesteur/VuePrincipale.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
       <item path="VueMeteo.cpp.cc" ex="false" tool="1" flavor2="0">
       </item>
       <item path="VueMeteo.h" ex="false" tool="3" flavor2="0">
@@ -115,6 +127,16 @@
       <item path="../ClassesMetier/Observateur.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="../ClassesMetier/Observateur.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="../VuePrincipaleTesteur/VuePrincipale.cpp.cc"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="../VuePrincipaleTesteur/VuePrincipale.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
       </item>
       <item path="VueMeteo.cpp.cc" ex="false" tool="1" flavor2="0">
       </item>
