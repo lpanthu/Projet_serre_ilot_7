@@ -1,6 +1,7 @@
 #include "ClientMeteo.h"
 
 ClientMeteo::ClientMeteo() {
+    BulletinMeteo* bulletinMeteo = new BulletinMeteo();
 }
 
 ClientMeteo::~ClientMeteo() {

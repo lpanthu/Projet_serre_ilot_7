@@ -1,7 +1,7 @@
 #include "Serre.h"
 
 Serre::Serre() {
-    Serre* serre = new Serre();
+    infosClimat* infosClimat = new infoclimat();
 }
 
 Serre::~Serre() {
