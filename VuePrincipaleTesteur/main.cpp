@@ -7,9 +7,9 @@ int main(int argc, char *argv[]) {
     QApplication app(argc, argv);
     //Superviseur *leSuperviseur = new Superviseur();
     //VuePrincipale *maVuePrincipale = new VuePrincipale(leSuperviseur);
-    VuePrincipale *maVuePrincipale = new VuePrincipale();
-    maVuePrincipale->show();
-    maVuePrincipale->mettreAJour();
+    VuePrincipale *laVuePrincipale = new VuePrincipale();
+    laVuePrincipale->show();
+    laVuePrincipale->mettreAJour();
     return app.exec();
-    delete maVuePrincipale;
+    delete laVuePrincipale;
 }

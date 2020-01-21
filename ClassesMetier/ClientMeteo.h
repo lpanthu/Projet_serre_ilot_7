@@ -6,7 +6,6 @@
 class ClientMeteo {
 public:
     ClientMeteo();
-    ClientMeteo(const ClientMeteo& orig);
     virtual ~ClientMeteo();
     void traiterBulletinMeteo(BulletinMeteo bulletin);
     void declencherAlerteVent();

@@ -737,6 +737,20 @@ moc_VueMeteo.cpp: ../VueMeteoTesteur/ui_VueMeteo.h \
 		/opt/Qt/5.7/gcc_64/include/QtGui/qtextoption.h \
 		/opt/Qt/5.7/gcc_64/include/QtWidgets/QVBoxLayout \
 		/opt/Qt/5.7/gcc_64/include/QtWidgets/QWidget \
+		VuePrincipale.h \
+		ui_VuePrincipale.h \
+		../ClassesMetier/Superviseur.h \
+		../ClassesMetier/ClientMeteo.h \
+		../ClassesMetier/BulletinMeteo.h \
+		../ClassesMetier/Observable.h \
+		../ClassesMetier/Observateur.h \
+		../ClassesMetier/Serre.h \
+		../ClassesMetier/infoclimat.h \
+		../VueMeteoTesteur/VueMeteo.h \
+		../VueSerreTesteur/VueSerre.h \
+		../VueSerreTesteur/ui_VueSerre.h \
+		/opt/Qt/5.7/gcc_64/include/QtWidgets/QGridLayout \
+		../VueSerreTesteur/infoclimat.h \
 		../VueMeteoTesteur/VueMeteo.h \
 		/opt/Qt/5.7/gcc_64/bin/moc
 	/opt/Qt/5.7/gcc_64/bin/moc $(DEFINES) -I/opt/Qt/5.7/gcc_64/mkspecs/linux-g++ -I'/home/snir2g2/Documents/IR C/TP6/Projet_serre_ilot_7/VuePrincipaleTesteur/nbproject' -I/opt/Qt/5.7/gcc_64/include -I/opt/Qt/5.7/gcc_64/include/QtWidgets -I/opt/Qt/5.7/gcc_64/include/QtGui -I/opt/Qt/5.7/gcc_64/include/QtCore -I. -I/usr/include/c++/6.1.1 -I/usr/include/c++/6.1.1/x86_64-redhat-linux -I/usr/include/c++/6.1.1/backward -I/usr/lib/gcc/x86_64-redhat-linux/6.1.1/include -I/usr/local/include -I/usr/include ../VueMeteoTesteur/VueMeteo.h -o moc_VueMeteo.cpp
@@ -1086,7 +1100,9 @@ compiler_clean: compiler_moc_header_clean compiler_uic_clean
 ####### Compile
 
 build/Debug/GNU-Linux/ClientMeteo.o: ../ClassesMetier/ClientMeteo.cpp ../ClassesMetier/ClientMeteo.h \
-		../ClassesMetier/BulletinMeteo.h
+		../ClassesMetier/BulletinMeteo.h \
+		../ClassesMetier/Observable.h \
+		../ClassesMetier/Observateur.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/Debug/GNU-Linux/ClientMeteo.o ../ClassesMetier/ClientMeteo.cpp
 
 build/Debug/GNU-Linux/Serre.o: ../ClassesMetier/Serre.cpp ../ClassesMetier/Serre.h \
@@ -1552,7 +1568,20 @@ build/Debug/GNU-Linux/VueMeteo.cpp.o: ../VueMeteoTesteur/VueMeteo.cpp.cc ../VueM
 		/opt/Qt/5.7/gcc_64/include/QtGui/qpen.h \
 		/opt/Qt/5.7/gcc_64/include/QtGui/qtextoption.h \
 		/opt/Qt/5.7/gcc_64/include/QtWidgets/QVBoxLayout \
-		/opt/Qt/5.7/gcc_64/include/QtWidgets/QWidget
+		/opt/Qt/5.7/gcc_64/include/QtWidgets/QWidget \
+		VuePrincipale.h \
+		ui_VuePrincipale.h \
+		../ClassesMetier/Superviseur.h \
+		../ClassesMetier/ClientMeteo.h \
+		../ClassesMetier/BulletinMeteo.h \
+		../ClassesMetier/Observable.h \
+		../ClassesMetier/Observateur.h \
+		../ClassesMetier/Serre.h \
+		../ClassesMetier/infoclimat.h \
+		../VueSerreTesteur/VueSerre.h \
+		../VueSerreTesteur/ui_VueSerre.h \
+		/opt/Qt/5.7/gcc_64/include/QtWidgets/QGridLayout \
+		../VueSerreTesteur/infoclimat.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/Debug/GNU-Linux/VueMeteo.cpp.o ../VueMeteoTesteur/VueMeteo.cpp.cc
 
 build/Debug/GNU-Linux/VueSerre.cpp.o: ../VueSerreTesteur/VueSerre.cpp.cc ../VueSerreTesteur/ui_VueSerre.h \
@@ -1711,6 +1740,8 @@ build/Debug/GNU-Linux/VuePrincipale.cpp.o: VuePrincipale.cpp.cc VuePrincipale.h 
 		../ClassesMetier/Superviseur.h \
 		../ClassesMetier/ClientMeteo.h \
 		../ClassesMetier/BulletinMeteo.h \
+		../ClassesMetier/Observable.h \
+		../ClassesMetier/Observateur.h \
 		../ClassesMetier/Serre.h \
 		../ClassesMetier/infoclimat.h \
 		../VueMeteoTesteur/VueMeteo.h \
@@ -1863,9 +1894,7 @@ build/Debug/GNU-Linux/VuePrincipale.cpp.o: VuePrincipale.cpp.cc VuePrincipale.h 
 		../VueSerreTesteur/VueSerre.h \
 		../VueSerreTesteur/ui_VueSerre.h \
 		/opt/Qt/5.7/gcc_64/include/QtWidgets/QGridLayout \
-		../VueSerreTesteur/infoclimat.h \
-		../ClassesMetier/Observable.h \
-		../ClassesMetier/Observateur.h
+		../VueSerreTesteur/infoclimat.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/Debug/GNU-Linux/VuePrincipale.cpp.o VuePrincipale.cpp.cc
 
 build/Debug/GNU-Linux/main.o: main.cpp /opt/Qt/5.7/gcc_64/include/QtWidgets/QApplication \
@@ -1977,6 +2006,8 @@ build/Debug/GNU-Linux/main.o: main.cpp /opt/Qt/5.7/gcc_64/include/QtWidgets/QApp
 		../ClassesMetier/Superviseur.h \
 		../ClassesMetier/ClientMeteo.h \
 		../ClassesMetier/BulletinMeteo.h \
+		../ClassesMetier/Observable.h \
+		../ClassesMetier/Observateur.h \
 		../ClassesMetier/Serre.h \
 		../ClassesMetier/infoclimat.h \
 		../VueMeteoTesteur/VueMeteo.h \
@@ -2025,9 +2056,7 @@ build/Debug/GNU-Linux/main.o: main.cpp /opt/Qt/5.7/gcc_64/include/QtWidgets/QApp
 		../VueSerreTesteur/VueSerre.h \
 		../VueSerreTesteur/ui_VueSerre.h \
 		/opt/Qt/5.7/gcc_64/include/QtWidgets/QGridLayout \
-		../VueSerreTesteur/infoclimat.h \
-		../ClassesMetier/Observable.h \
-		../ClassesMetier/Observateur.h
+		../VueSerreTesteur/infoclimat.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o build/Debug/GNU-Linux/main.o main.cpp
 
 build/Debug/GNU-Linux/moc_VueMeteo.o: moc_VueMeteo.cpp 

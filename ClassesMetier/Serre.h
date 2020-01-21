@@ -6,7 +6,6 @@
 class Serre {
 public:
     Serre();
-    Serre(const Serre& orig);
     virtual ~Serre();
     void executerCommande();
 private:

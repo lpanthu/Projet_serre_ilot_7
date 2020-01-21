@@ -8,7 +8,6 @@
 class Superviseur {
 public:
     Superviseur();
-    Superviseur(const Superviseur& orig);
     virtual ~Superviseur();
     ClientMeteo* getLeClientMeteo();
     void setVuePrincipale(VuePrincipale uneVuePrincipale);

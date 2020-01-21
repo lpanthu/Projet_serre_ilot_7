@@ -4,9 +4,6 @@ Serre::Serre() {
     Serre* serre = new Serre();
 }
 
-Serre::Serre(const Serre& orig) {
-}
-
 Serre::~Serre() {
 }
 

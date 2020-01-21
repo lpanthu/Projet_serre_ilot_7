@@ -3,9 +3,6 @@
 ClientMeteo::ClientMeteo() {
 }
 
-ClientMeteo::ClientMeteo(const ClientMeteo& orig) {
-}
-
 ClientMeteo::~ClientMeteo() {
 }
 
