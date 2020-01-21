@@ -10,8 +10,8 @@
  * 
  * Created on 26 novembre 2017, 23:27
  */
+#include "../ClassesMetier/Observable.h"
 
-#include "Observable.h"
 
 Observable::Observable() {
 }

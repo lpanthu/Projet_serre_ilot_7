@@ -16,8 +16,7 @@
 #include <vector>
 #include "Observateur.h"
 
-
-class Observateur;
+using namespace std;
 
 class Observable {
 public:
